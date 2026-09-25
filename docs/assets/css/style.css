@@ -2070,5 +2070,10 @@ a {
 
 }
 
+/* Destaca em negrito o link de navegação que está ativo */
+.nav-link.active {
+  font-weight: bold;
+}
+
 
 

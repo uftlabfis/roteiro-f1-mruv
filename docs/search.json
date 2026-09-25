@@ -2,35 +2,35 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Título do Roteiro",
+    "title": "Movimento Retilíneo e Uniforme (MRU)",
     "section": "",
-    "text": "Apresente brevemente os conceitos físicos relacionados à atividade, destacando os princípios e fenômenos que serão investigados. Contextualize o experimento e sua relevância para a compreensão do conteúdo, podendo incluir as principais equações ou relações teóricas necessárias à análise dos resultados. O parágrafo seguinte mostra um exemplo.\nConforme Halliday; Resnick; Walker (2016), energia cinética é a energia associada ao movimento de um corpo. Quando uma força resultante realiza trabalho sobre um corpo, sua velocidade pode ser alterada e, consequentemente, sua energia cinética também se modifica. Essa relação é expressa pelo teorema trabalho–energia cinética, segundo o qual o trabalho realizado pela força resultante sobre um corpo é igual à variação de sua energia cinética. Para um corpo de massa (\\(m\\)) que se move com velocidade (\\(v\\)), a energia cinética é dada por\n\\[\nK = \\dfrac{1}{2} m v^2\n\\]\nUtilize imagens para complementar a explicação dos conceitos e procedimentos, priorizando esquemas, diagramas e fotografias que facilitem a compreensão do experimento. Toda imagem deve apresentar legenda e, quando necessário, identificar seus principais elementos. No texto, referencie a imagem utilizada.\nPor exemplo, a Figura 1 mostra o logo do Laboratório de Física.\n\n\n\nFigura 1: Logo do Labfis\n\n\n\n\n\n\n\nFonte: Labfis (2026)"
+    "text": "O Movimento Retilíneo e Uniforme (MRU) é aquele em que o vetor velocidade permanece constante ao longo do tempo. Assim, o móvel percorre uma trajetória retilínea com velocidade de módulo, direção e sentido constantes. Na Mecânica Clássica, essa condição está associada a uma força resultante nula atuando sobre o móvel, de acordo com a primeira Lei de Newton Halliday; Resnick; Walker (2016).\nConsiderando um móvel que se desloca com velocidade constante (\\(v\\)), sua velocidade pode ser expressa pela razão entre o deslocamento e o intervalo de tempo:\n\\[\n  \\begin{align*}\n    v & = \\dfrac{s - s_0}{t - t_0}\n  \\end{align*}\n\\]\nAdotando (\\(t_0=0\\)), obtém-se a função horária da posição:\n\\[\n  s = s_0 + vt\n\\tag{1}\\]\nA Equação 1 mostra que, no MRU, a posição varia linearmente com o tempo. Dessa forma, a representação gráfica de (s) em função de (t) é uma reta, cujo coeficiente angular corresponde à velocidade do móvel.\nNeste experimento, serão realizadas medidas de posição e tempo durante o movimento de um móvel, com o objetivo de verificar experimentalmente a relação entre essas grandezas e determinar a velocidade a partir da análise dos dados e do gráfico (\\(s \\times t\\))."
   },
   {
     "objectID": "index.html#introdução",
     "href": "index.html#introdução",
-    "title": "Título do Roteiro",
+    "title": "Movimento Retilíneo e Uniforme (MRU)",
     "section": "",
-    "text": "Apresente brevemente os conceitos físicos relacionados à atividade, destacando os princípios e fenômenos que serão investigados. Contextualize o experimento e sua relevância para a compreensão do conteúdo, podendo incluir as principais equações ou relações teóricas necessárias à análise dos resultados. O parágrafo seguinte mostra um exemplo.\nConforme Halliday; Resnick; Walker (2016), energia cinética é a energia associada ao movimento de um corpo. Quando uma força resultante realiza trabalho sobre um corpo, sua velocidade pode ser alterada e, consequentemente, sua energia cinética também se modifica. Essa relação é expressa pelo teorema trabalho–energia cinética, segundo o qual o trabalho realizado pela força resultante sobre um corpo é igual à variação de sua energia cinética. Para um corpo de massa (\\(m\\)) que se move com velocidade (\\(v\\)), a energia cinética é dada por\n\\[\nK = \\dfrac{1}{2} m v^2\n\\]\nUtilize imagens para complementar a explicação dos conceitos e procedimentos, priorizando esquemas, diagramas e fotografias que facilitem a compreensão do experimento. Toda imagem deve apresentar legenda e, quando necessário, identificar seus principais elementos. No texto, referencie a imagem utilizada.\nPor exemplo, a Figura 1 mostra o logo do Laboratório de Física.\n\n\n\nFigura 1: Logo do Labfis\n\n\n\n\n\n\n\nFonte: Labfis (2026)"
+    "text": "O Movimento Retilíneo e Uniforme (MRU) é aquele em que o vetor velocidade permanece constante ao longo do tempo. Assim, o móvel percorre uma trajetória retilínea com velocidade de módulo, direção e sentido constantes. Na Mecânica Clássica, essa condição está associada a uma força resultante nula atuando sobre o móvel, de acordo com a primeira Lei de Newton Halliday; Resnick; Walker (2016).\nConsiderando um móvel que se desloca com velocidade constante (\\(v\\)), sua velocidade pode ser expressa pela razão entre o deslocamento e o intervalo de tempo:\n\\[\n  \\begin{align*}\n    v & = \\dfrac{s - s_0}{t - t_0}\n  \\end{align*}\n\\]\nAdotando (\\(t_0=0\\)), obtém-se a função horária da posição:\n\\[\n  s = s_0 + vt\n\\tag{1}\\]\nA Equação 1 mostra que, no MRU, a posição varia linearmente com o tempo. Dessa forma, a representação gráfica de (s) em função de (t) é uma reta, cujo coeficiente angular corresponde à velocidade do móvel.\nNeste experimento, serão realizadas medidas de posição e tempo durante o movimento de um móvel, com o objetivo de verificar experimentalmente a relação entre essas grandezas e determinar a velocidade a partir da análise dos dados e do gráfico (\\(s \\times t\\))."
   },
   {
     "objectID": "index.html#objetivos",
     "href": "index.html#objetivos",
-    "title": "Título do Roteiro",
+    "title": "Movimento Retilíneo e Uniforme (MRU)",
     "section": "Objetivos",
-    "text": "Objetivos\nApresente de forma clara e objetiva o que se pretende alcançar com a atividade experimental, utilizando verbos de ação como\n\nInvestigar\nAnalisar\nDeterminar\nVerificar\nCompreender"
+    "text": "Objetivos\n\nReconhecer o movimento retilíneo e uniforme\nConstruir o gráfico da variação da posição do móvel em função do tempo;\nObter o valor da velocidade do móvel a partir do gráfico \\(s\\) versus \\(t\\)."
   },
   {
     "objectID": "index.html#material-necessário",
     "href": "index.html#material-necessário",
-    "title": "Título do Roteiro",
+    "title": "Movimento Retilíneo e Uniforme (MRU)",
     "section": "Material necessário",
-    "text": "Material necessário\nListe todos os materiais, equipamentos e instrumentos que serão utilizados na atividade experimental, de forma organizada e objetiva.\n\nBalança;\nCronômetro;\nPaquímetro;\nTrilho de baixo atrito."
+    "text": "Material necessário\n\n\n\n\n\n\nNota\n\n\n\nO experimento possui duas configurações independentes: Trilho de Rolamento ou Trilho de Ar. Cada versão utiliza exclusivamente os materiais correspondentes à sua configuração.\n\n\n\nConfiguração com Trilho de RolamentoConfiguração com Trilho de Ar\n\n\n\n\n\nFigura 1\n\n\n\n\nTrilho de Rolamento\n\n\n\n\nFonte: Labfis (2026)\n\n\n\n\n\n01 trilho de rolamento dotado de escala milimetrada;\n02 sensores fotoelétricos com múltiplas esperas de posicionamento;\n01 carro;\n01 cronômetro digital.\n\n\n\n\n\n\nFigura 2\n\n\n\n\nTrilho de Ar\n\n\n\n\nFonte: Labfis (2026)\n\n\n\n\n\n01 unidade geradora de fluxo de ar com mangueira de conexões rápidas (1);\n01 trilho de ar com barramento principal dotado de escala milimetrada, hastes paralelas, base secundária, com articulador dianteiro (2);\n02 sensores fotoelétricos com múltiplas esperas de posicionamento (3);\num carro com suporte (4);\num cronômetro digital (5)."
   },
   {
     "objectID": "index.html#referências",
     "href": "index.html#referências",
-    "title": "Título do Roteiro",
+    "title": "Movimento Retilíneo e Uniforme (MRU)",
     "section": "Referências",
     "text": "Referências\n\n\nHALLIDAY, D.; RESNICK, R.; WALKER, J. Fundamentos de Física: Mecânica. 10. ed. Rio de Janeiro: LTC, 2016. v. 1"
   }

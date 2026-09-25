@@ -8,7 +8,7 @@
 
 <meta name="author" content="Laboratório de Física">
 
-<title>Título do Roteiro</title>
+<title>Movimento Retilíneo e Uniforme (MRU)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -135,13 +135,13 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <div class="quarto-other-links"><h2>Baixar Material</h2><ul><li><a href="titulo-do-roteiro.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Roteiro do Experimento</a></li><li><a href="https://raw.githubusercontent.com/uftlabfis/uftlabfis-uftlabfis-roteiros/main/instrumentacao/papel-milimetrado-18x22.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Papel milimetrado</a></li><li><a href="https://uftlabfis.pythonanywhere.com/file/02_mruv_v2020_01.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Outro roteiro</a></li></ul></div></div>
+    <div class="quarto-other-links"><h2>Baixar Material</h2><ul><li><a href="mru-trilho-rolamento.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Roteiro - Trilho de Rolamento</a></li><li><a href="assets/alternatives/mru-trilho-de-ar.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Roteiro - Trilho de Ar</a></li><li><a href="assets/alternatives/mru-prof-heverton.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Roteiro do prof. Heverton</a></li><li><a href="https://raw.githubusercontent.com/uftlabfis/uftlabfis-uftlabfis-roteiros/main/instrumentacao/papel-milimetrado-18x22.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Papel milimetrado</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Título do Roteiro</h1>
+<h1 class="title">Movimento Retilíneo e Uniforme (MRU)</h1>
 </div>
 
 
@@ -179,47 +179,101 @@ window.Quarto = {
 
 <section id="introdução" class="level2">
 <h2 data-anchor-id="introdução">Introdução</h2>
-<p>Apresente brevemente os conceitos físicos relacionados à atividade, destacando os princípios e fenômenos que serão investigados. Contextualize o experimento e sua relevância para a compreensão do conteúdo, podendo incluir as principais equações ou relações teóricas necessárias à análise dos resultados. O parágrafo seguinte mostra um exemplo.</p>
-<p>Conforme <span class="citation" data-cites="Halliday1">Halliday; Resnick; Walker (<a href="#ref-Halliday1" role="doc-biblioref">2016</a>)</span>, <em>energia cinética</em> é a energia associada ao movimento de um corpo. Quando uma força resultante realiza trabalho sobre um corpo, sua velocidade pode ser alterada e, consequentemente, sua energia cinética também se modifica. Essa relação é expressa pelo teorema trabalho–energia cinética, segundo o qual o trabalho realizado pela força resultante sobre um corpo é igual à variação de sua energia cinética. Para um corpo de massa (<span class="math inline">\(m\)</span>) que se move com velocidade (<span class="math inline">\(v\)</span>), a energia cinética é dada por</p>
+<p>O <strong>Movimento Retilíneo e Uniforme (MRU)</strong> é aquele em que o vetor velocidade permanece constante ao longo do tempo. Assim, o móvel percorre uma trajetória retilínea com velocidade de módulo, direção e sentido constantes. Na Mecânica Clássica, essa condição está associada a uma força resultante nula atuando sobre o móvel, de acordo com a primeira Lei de Newton <span class="citation" data-cites="Halliday1">Halliday; Resnick; Walker (<a href="#ref-Halliday1" role="doc-biblioref">2016</a>)</span>.</p>
+<p>Considerando um móvel que se desloca com velocidade constante (<span class="math inline">\(v\)</span>), sua velocidade pode ser expressa pela razão entre o deslocamento e o intervalo de tempo:</p>
 <p><span class="math display">\[
-K = \dfrac{1}{2} m v^2
+  \begin{align*}
+    v &amp; = \dfrac{s - s_0}{t - t_0}
+  \end{align*}
 \]</span></p>
-<p>Utilize imagens para complementar a explicação dos conceitos e procedimentos, priorizando esquemas, diagramas e fotografias que facilitem a compreensão do experimento. Toda imagem deve apresentar legenda e, quando necessário, identificar seus principais elementos. No texto, referencie a imagem utilizada.</p>
-<p>Por exemplo, a <a href="#fig-labfis-logo" class="quarto-xref">Figura&nbsp;1</a> mostra o logo do Laboratório de Física.</p>
-<div id="fig-labfis-logo" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-labfis-logo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;1: Logo do Labfis
-</figcaption>
-<div aria-describedby="fig-labfis-logo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="assets/images/labfis-logo-transparente.png" class="img-fluid figure-img" style="width:50.0%">
+<p>Adotando (<span class="math inline">\(t_0=0\)</span>), obtém-se a <strong>função horária da posição</strong>:</p>
+<p><span id="eq-funcao-horaria-mru"><span class="math display">\[
+  s = s_0 + vt
+\tag{1}\]</span></span></p>
+<p>A <a href="#eq-funcao-horaria-mru" class="quarto-xref">Equação&nbsp;1</a> mostra que, no MRU, a posição varia linearmente com o tempo. Dessa forma, a representação gráfica de (s) em função de (t) é uma reta, cujo coeficiente angular corresponde à velocidade do móvel.</p>
+<p>Neste experimento, serão realizadas medidas de posição e tempo durante o movimento de um móvel, com o objetivo de verificar experimentalmente a relação entre essas grandezas e determinar a velocidade a partir da análise dos dados e do gráfico (<span class="math inline">\(s \times t\)</span>).</p>
+</section>
+<section id="objetivos" class="level2">
+<h2 data-anchor-id="objetivos">Objetivos</h2>
+<ol type="1">
+<li>Reconhecer o movimento retilíneo e uniforme</li>
+<li>Construir o gráfico da variação da posição do móvel em função do tempo;</li>
+<li>Obter o valor da velocidade do móvel a partir do gráfico <span class="math inline">\(s\)</span> versus <span class="math inline">\(t\)</span>.</li>
+</ol>
+</section>
+<section id="material-necessário" class="level2">
+<h2 data-anchor-id="material-necessário">Material necessário</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<div class="callout-title-container flex-fill">
+Nota
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>O experimento possui duas configurações independentes: <strong>Trilho de Rolamento</strong> ou <strong>Trilho de Ar</strong>. Cada versão utiliza exclusivamente os materiais correspondentes à sua configuração.</p>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Configuração com Trilho de Rolamento</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Configuração com Trilho de Ar</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="fig-trilho-de-rolamento" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-trilho-de-rolamento-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1
+</figcaption>
+<div aria-describedby="fig-trilho-de-rolamento-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Trilho de Rolamento</figcaption>
+<p><img src="assets/images/trilho_de_rolamento.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <div style="text-align: center; font-size: smaller;">
 <p><strong>Fonte:</strong> Labfis (2026)</p>
 </div>
-</section>
-<section id="objetivos" class="level2">
-<h2 data-anchor-id="objetivos">Objetivos</h2>
-<p>Apresente de forma clara e objetiva o que se pretende alcançar com a atividade experimental, utilizando verbos de ação como</p>
-<ol type="1">
-<li>Investigar</li>
-<li>Analisar</li>
-<li>Determinar</li>
-<li>Verificar</li>
-<li>Compreender</li>
-</ol>
-</section>
-<section id="material-necessário" class="level2">
-<h2 data-anchor-id="material-necessário">Material necessário</h2>
-<p>Liste todos os materiais, equipamentos e instrumentos que serão utilizados na atividade experimental, de forma organizada e objetiva.</p>
+</div>
+</figure>
+</div>
 <ul>
-<li>Balança;</li>
-<li>Cronômetro;</li>
-<li>Paquímetro;</li>
-<li>Trilho de baixo atrito.</li>
+<li>01 trilho de rolamento dotado de escala milimetrada;</li>
+<li>02 sensores fotoelétricos com múltiplas esperas de posicionamento;</li>
+<li>01 carro;</li>
+<li>01 cronômetro digital.</li>
 </ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="fig-trilho-de-ar" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-trilho-de-ar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2
+</figcaption>
+<div aria-describedby="fig-trilho-de-ar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Trilho de Ar</figcaption>
+<p><img src="assets/images/trilho_de_ar.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<div style="text-align: center; font-size: smaller;">
+<p><strong>Fonte:</strong> Labfis (2026)</p>
+</div>
+</div>
+</figure>
+</div>
+<ul>
+<li>01 unidade geradora de fluxo de ar com mangueira de conexões rápidas (1);</li>
+<li>01 trilho de ar com barramento principal dotado de escala milimetrada, hastes paralelas, base secundária, com articulador dianteiro (2);</li>
+<li>02 sensores fotoelétricos com múltiplas esperas de posicionamento (3);</li>
+<li>um carro com suporte (4);</li>
+<li>um cronômetro digital (5).</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
 <section id="referências" class="level2">
 <h2 data-anchor-id="referências">Referências</h2>
@@ -299,7 +353,7 @@ HALLIDAY, D.; RESNICK, R.; WALKER, J. <strong>Fundamentos de Física: Mecânica<
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/costandrad\.github\.io\/uftlabfis-roteiro-web-template\/");
+        var filterRegex = new RegExp("https:\/\/uftlabfis\.github\.io\/roteiro-f1-mru\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

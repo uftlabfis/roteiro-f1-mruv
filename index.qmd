@@ -1,5 +1,5 @@
 ---
-title: "Título do Roteiro"
+title: "MRUV e 2ª Lei de Newton"
 author:
   - name: "Laboratório de Física"
     affiliations: "Universidade Federal do Tocantins"
@@ -7,25 +7,33 @@ author:
 date: today
 columns: 2 # 👈 Mantido aqui (específico para a diagramação deste PDF)
 abstract: ""
-url: "https://github.com/uftlabfis"
+url: "https://uftlabfis.github.io/roteiro-f1-mru/"
 bibliography: assets/references/references.bib
+
+params:
+  version:
+    rolamento: true
 
 format:
   html: default
   uftlabfis-typst:
-    output-file: titulo-do-roteiro.pdf
+    output-file: mruv-trilho-rolamento.pdf
 
 other-links:
-  - text: Roteiro do Experimento
-    href: titulo-do-roteiro.pdf
+  - text: Roteiro - Trilho de Rolamento
+    href: mruv-trilho-rolamento.pdf
+    icon: file-earmark-pdf
+    target: "_blank"
+  - text: Roteiro - Trilho de Ar
+    href: assets/alternatives/mruv-trilho-de-ar.pdf
+    icon: file-earmark-pdf
+    target: "_blank"
+  - text: Roteiro do prof. Heverton
+    href: assets/alternatives/mruv-prof-heverton.pdf
     icon: file-earmark-pdf
     target: "_blank"
   - text: Papel milimetrado
     href: https://raw.githubusercontent.com/uftlabfis/uftlabfis-uftlabfis-roteiros/main/instrumentacao/papel-milimetrado-18x22.pdf
-    icon: file-earmark-pdf
-    target: "_blank"
-  - text: Outro roteiro
-    href: https://uftlabfis.pythonanywhere.com/file/02_mruv_v2020_01.pdf
     icon: file-earmark-pdf
     target: "_blank"
   # - text: Repositório no GitHub
@@ -43,45 +51,75 @@ other-links:
 ::: {.content-visible when-format="html"}
 ## Introdução
 
-Apresente brevemente os conceitos físicos relacionados à atividade, destacando os princípios e fenômenos que serão investigados. Contextualize o experimento e sua relevância para a compreensão do conteúdo, podendo incluir as principais equações ou relações teóricas necessárias à análise dos resultados. O parágrafo seguinte mostra um exemplo.
+O **Movimento Retilíneo e Uniforme (MRU)** é aquele em que o vetor velocidade permanece constante ao longo do tempo. Assim, o móvel percorre uma trajetória retilínea com velocidade de módulo, direção e sentido constantes. Na Mecânica Clássica, essa condição está associada a uma força resultante nula atuando sobre o móvel, de acordo com a primeira Lei de Newton @Halliday1.
 
-Conforme @Halliday1, *energia cinética* é a energia associada ao movimento de um corpo. Quando uma força resultante realiza trabalho sobre um corpo, sua velocidade pode ser alterada e, consequentemente, sua energia cinética também se modifica. Essa relação é expressa pelo teorema trabalho–energia cinética, segundo o qual o trabalho realizado pela força resultante sobre um corpo é igual à variação de sua energia cinética. Para um corpo de massa ($m$) que se move com velocidade ($v$), a energia cinética é dada por
+Considerando um móvel que se desloca com velocidade constante ($v$), sua velocidade pode ser expressa pela razão entre o deslocamento e o intervalo de tempo:
 
 $$
-K = \dfrac{1}{2} m v^2
+  \begin{align*}
+    v & = \dfrac{s - s_0}{t - t_0}
+  \end{align*}
 $$
 
-Utilize imagens para complementar a explicação dos conceitos e procedimentos, priorizando esquemas, diagramas e fotografias que facilitem a compreensão do experimento. Toda imagem deve apresentar legenda e, quando necessário, identificar seus principais elementos. No texto, referencie a imagem utilizada. 
+Adotando ($t_0=0$), obtém-se a **função horária da posição**:
+
+$$
+  s = s_0 + vt
+$${#eq-funcao-horaria-mru}
+
+A @eq-funcao-horaria-mru mostra que, no MRU, a posição varia linearmente com o tempo. Dessa forma, a representação gráfica de (s) em função de (t) é uma reta, cujo coeficiente angular corresponde à velocidade do móvel.
+
+Neste experimento, serão realizadas medidas de posição e tempo durante o movimento de um móvel, com o objetivo de verificar experimentalmente a relação entre essas grandezas e determinar a velocidade a partir da análise dos dados e do gráfico ($s \times t$).
+
+## Objetivos
 
 
-::: {.content-visible when-format="html"}
-Por exemplo, a @fig-labfis-logo mostra o logo do Laboratório de Física.
+1. Reconhecer o movimento retilíneo e uniforme
+2. Construir o gráfico da variação da posição do móvel em função do tempo;
+3. Obter o valor da velocidade do móvel a partir do gráfico $s$ versus $t$.
 
-![Logo do Labfis](assets/images/labfis-logo-transparente.png){#fig-labfis-logo width=50%}
+## Material necessário
+
+::: {.callout-note}
+O experimento possui duas configurações independentes: **Trilho de Rolamento** ou **Trilho de Ar**. Cada versão utiliza exclusivamente os materiais correspondentes à sua configuração.
+:::
+
+
+
+::: {.panel-tabset}
+
+### Configuração com Trilho de Rolamento
+
+::: {#fig-trilho-de-rolamento}
+![Trilho de Rolamento](assets/images/trilho_de_rolamento.png){}
 
 <div style="text-align: center; font-size: smaller;">
   **Fonte:** Labfis (2026)
 </div>
 :::
 
-## Objetivos
+ - 01 trilho de rolamento dotado de escala milimetrada;
+ - 02 sensores fotoelétricos com múltiplas esperas de posicionamento;
+ - 01 carro;
+ - 01 cronômetro digital.
 
-Apresente de forma clara e objetiva o que se pretende alcançar com a atividade experimental, utilizando verbos de ação como
+### Configuração com Trilho de Ar
 
-1. Investigar
-2. Analisar
-3. Determinar
-4. Verificar
-5. Compreender
+::: {#fig-trilho-de-ar}
+![Trilho de Ar](assets/images/trilho_de_ar.png){}
 
-## Material necessário
+<div style="text-align: center; font-size: smaller;">
+  **Fonte:** Labfis (2026)
+</div>
+:::
 
-Liste todos os materiais, equipamentos e instrumentos que serão utilizados na atividade experimental, de forma organizada e objetiva.
+  - 01 unidade geradora de fluxo de ar com mangueira de conexões rápidas (1);
+  - 01 trilho de ar com barramento principal dotado de escala milimetrada, hastes paralelas, base secundária, com articulador dianteiro (2);
+  - 02 sensores fotoelétricos com múltiplas esperas de posicionamento (3);
+  - um carro com suporte (4);
+  - um cronômetro digital (5).
 
-- Balança;
-- Cronômetro;
-- Paquímetro;
-- Trilho de baixo atrito.
+:::
 
 ## Referências
 
@@ -96,44 +134,74 @@ Liste todos os materiais, equipamentos e instrumentos que serão utilizados na a
   it
 }
 
+#let version = "rolamento"
+//#let version = "ar"
+
 = Introdução
 
-Apresente brevemente os conceitos físicos relacionados à atividade, destacando os princípios e fenômenos que serão investigados. Contextualize o experimento e sua relevância para a compreensão do conteúdo, podendo incluir as principais equações ou relações teóricas necessárias à análise dos resultados. O parágrafo seguinte mostra um exemplo.
+O *Movimento Retilíneo e Uniforme (MRU)* é aquele em que o vetor velocidade permanece constante ao longo do tempo. Assim, o móvel percorre uma trajetória retilínea com velocidade de módulo, direção e sentido constantes. Na Mecânica Clássica, essa condição está associada a uma força resultante nula atuando sobre o móvel, de acordo com a primeira Lei de Newton @Halliday1.
 
-Conforme #cite(<Halliday1>, form: "prose"), *energia cinética* é a energia associada ao movimento de um corpo. Quando uma força resultante realiza trabalho sobre um corpo, sua velocidade pode ser alterada e, consequentemente, sua energia cinética também se modifica. Essa relação é expressa pelo teorema trabalho–energia cinética, segundo o qual o trabalho realizado pela força resultante sobre um corpo é igual à variação de sua energia cinética. Para um corpo de massa ($m$) que se move com velocidade ($v$), a energia cinética é dada por
+Considerando um móvel que se desloca com velocidade constante ($v$), sua velocidade pode ser expressa pela razão entre o deslocamento e o intervalo de tempo:
 
 $
-K = 1/2 m v^2
+  v = (s - s_0)/(t - t_0)
 $
 
-Utilize imagens para complementar a explicação dos conceitos e procedimentos, priorizando esquemas, diagramas e fotografias que facilitem a compreensão do experimento. Toda imagem deve apresentar legenda e, quando necessário, identificar seus principais elementos. No texto, referencie a imagem utilizada. 
+Adotando ($t_0=0$), obtém-se a *função horária da posição*:
 
+$
+  s = s_0 + v t
+$<eq-funcao-horaria-mru>
 
-Por exemplo, a @fig-labfis-logo mostra o logo do Laboratório de Física.
+A @eq-funcao-horaria-mru mostra que, no MRU, a posição varia linearmente com o tempo. Dessa forma, a representação gráfica de (s) em função de (t) é uma reta, cujo coeficiente angular corresponde à velocidade do móvel.
 
-#figure(
-  image("assets/images/labfis-logo-transparente.png", width: 50%),
-  caption: [Logo do Labfis]
-)<fig-labfis-logo>
+Neste experimento, serão realizadas medidas de posição e tempo durante o movimento de um móvel, com o objetivo de verificar experimentalmente a relação entre essas grandezas e determinar a velocidade a partir da análise dos dados e do gráfico ($s times t$).
 
 = Objetivos
 
-Apresente de forma clara e objetiva o que se pretende alcançar com a atividade experimental, utilizando verbos de ação como
-
-1. Investigar
-2. Analisar
-3. Determinar
-4. Verificar
-5. Compreender
++ Reconhecer o movimento retilíneo e uniforme
++ Construir o gráfico da variação da posição do móvel em função do tempo;
++ Obter o valor da velocidade do móvel a partir do gráfico $s$ versus $t$.
 
 = Material necessário
 
-Liste todos os materiais, equipamentos e instrumentos que serão utilizados na atividade experimental, de forma organizada e objetiva.
 
-- Balança;
-- Cronômetro;
-- Paquímetro;
-- Trilho de baixo atrito.
+#if version == "rolamento" [
+
+// === Trilho de Rolamento === //
+
+#figure(
+  image("assets/images/trilho_de_rolamento.png"),
+  caption: [Trilho de rolamento e acessórios]
+)<fig-trilho>
+#align(center)[#text(size: 10pt)[Fonte: Labfis (2026)]]
+
+- 01 trilho de rolamento dotado de escala milimetrada;
+- 02 sensores fotoelétricos com múltiplas esperas de posicionamento;
+- 01 carro dotado de êmbolo de lançamento ajustável em 3 posições de impulsão e pino de disparo;
+- 01 cronômetro digital.
+
+// === Trilho de Rolamento === //
+
+] else if version == "ar" [
+
+// === Trilho de Ar === //
+
+#figure(
+  image("assets/images/trilho_de_ar.png"),
+  caption: [Trilho de ar e acessórios]
+)<fig-trilho>
+#align(center)[#text(size: 10pt)[Fonte: Labfis (2026)]]
+
+- 01 unidade geradora de fluxo de ar com mangueira de conexões rápidas (1);
+- 01 trilho de ar com barramento principal dotado de escala milimetrada, hastes paralelas, base secundária, com articulador dianteiro (2);
+- 02 sensores fotoelétricos com múltiplas esperas de posicionamento (3);
+- um carro com suporte (4);
+- um cronômetro digital (5).
+
+// === Trilho de Ar === //
+
+]
 
 
 
@@ -141,45 +209,133 @@ Liste todos os materiais, equipamentos e instrumentos que serão utilizados na a
 
 = Procedimentos
 
-Descreva, em ordem lógica e de forma clara e objetiva, as etapas necessárias para a realização do experimento, incluindo a montagem, as medições e os cuidados relevantes durante a execução. Sempre que póssível, inclua uma tabela de coleta de dados, como a @tab-coleta-dados.
+#info-box([Atenção],[
+  Esteja atento para que o carro não caia do trilho
+])
+
+
+#if version == "rolamento" [
+// === INÍCIO Trilho de Rolamento === //
+
++ Ligue o cronômetro digital e configure-o conforme as opções a seguir:
+
+  - *1 Select Measurement* $arrow$ Time;
+  - *2 Select Mode* $arrow$ Two Gates.
+
++ Posicione o *primeiro sensor fotoelétrico* na marcação de 30 mm do trilho, correspondente à posição inicial $s_0 = 0$ m. Esse sensor *permanecerá fixo* durante toda a atividade.
+
++ Posicione o *segundo sensor fotoelétrico* na marcação de 40 mm do trilho, correspondente à posição $s_1 = 0,1$ m, conforme indicado na @tbl-dados.
+
++ Ajuste o êmbolo de lançamento na última posição.
+
++ Acione o botão *3 Start/Stop* do cronômetro digital.
+
++ Libere o êmbolo pressionando o pino de disparo, lançando o carrinho.
+
+// === FIM Trilho de Rolamento === //
+
+] else if version == "ar" [
+
+// === INÍCIO Trilho de Ar === //
 
 #figure(
   kind: table,
-  caption: [Coleta de dados],
+  caption: [Cronômetro Digital],
 )[
   #table(
-    columns: (1fr, 1fr, 1fr),
-    table.header([Coluna1], [Coluna2], [Coluna3]),
-    [1], [], [],
-    [2], [], [],
-    [3], [], [],
-    [4], [], [],
-    table.cell(colspan: 2)[*Média*]
+    columns: (2fr, 1fr),
+    table.header([Para ...], [Use o botão]),
+    [ligar/desligar o cronômetro], [#image("assets/images/trilho-de-ar/liga_desliga.png", width: 16pt)], 
+    [acessar as funções do cronômetro], [#image("assets/images/trilho-de-ar/acessa_func.png", width: 16pt)], 
+    ["zerar" o cronômetro], [#image("assets/images/trilho-de-ar/zera_cronometro.png", width: 16pt)], 
+
   )
-]<tab-coleta-dados>
+]<tbl-cronometro>
+#align(center)[#text(size: 10pt)[Fonte: Labfis (2026)]]
 
-== Primeira parte
++ Ligue o cronômetro digital e ajuste-o para a junção *MRU/MRUV*.
 
-1. Passo 1
-2. Passo 2
-3. Passo 3
-4. Passo 4
++ Posicione o *primeiro sensor fotoelétrico* na marcação de 1.100 mm do trilho, correspondente à posição inicial $s_0 = 0$ m. Esse sensor *permanecerá fixo* durante toda a atividade.
 
-== Segunda parte
++ Posicione o *segundo sensor fotoelétrico* na marcação de 1.000 mm do trilho, correspondente à posição $s_1 = 0,1$ m, conforme indicado na @tbl-dados.
 
-1. Passo 1
-2. Passo 2
-3. Passo 3
-4. Passo 4
-5. Passo 5
++ Ligue o gerador de fluxo de ar.
+
++ Coloque o carro em contato com o _lançador elástico_ e acione o zeramento do cronômetro.
+
++ Deforme levemente o _lançador elástico_ e solte o carro. 
+
+// === FIM Trilho de Ar === //
+
+]
 
 
-= Resultados
++ Anote o tempo indicado pelo cronômetro digital para o carrinho percorrer o trecho entre $s_0$ e $s_1$, no campo correspondente à *1ª Medida* da @tbl-dados.
 
-Apresente e organize os dados obtidos no experimento, utilizando tabelas, gráficos, cálculos e outras formas de representação que permitam analisar e interpretar os resultados.
++ Repita as etapas anteriores para realizar as demais medidas de tempo e, em seguida, calcule o tempo médio.
+
++ Mantendo o primeiro sensor fotoelétrico fixo, reposicione o *segundo sensor* nas demais posições indicadas na @tbl-dados e repita o procedimento.
+
+
+#if version == "ar" [
+
+// === INÍCIO Trilho de Ar === //
+
++ Deslique o gerador de fluxo de ar.
+
+// === FIM Trilho de Ar === //
+
+]
+
+
++ Com os dados de posição $s$ e tempo médio $t$ apresentados na @tbl-dados, construa o gráfico de dispersão $s$ versus $t$.
+
++ Obtenha a reta de regressão que melhor se ajusta aos dados experimentais e, a partir dela, obtenha a função horária do movimento (ver @eq-funcao-horaria-mru).
+
++ Determine a velocidade do móvel e avalie se os resultados são compatíveis com o Movimento Retilíneo Uniforme (MRU). Discuta os resultados obtidos.
+
 
 #set heading(numbering: none)
 = Referências
 
 #bibliography("assets/references/references.bib", style: "assets/references/abnt.csl", title: none)
+
+#set table(
+  align: center+horizon,
+  fill: (x, y) => if y <= 1 {
+    primary-color.transparentize(60%)
+  } else {
+    if calc.odd(y) {
+      primary-color.transparentize(80%)
+    }
+  }
+)
+
+
+#place(
+  bottom,
+  float: true,
+  scope: "parent", 
+  clearance: 1.5em
+)[
+  #figure(
+    kind: table,
+    caption: [Coleta de dados],
+  )[
+    #table(
+      columns: (0.4fr, 0.6fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr),
+      table.header(
+        table.cell(colspan: 2, rowspan: 2, [Posição (m)]), table.cell(colspan: 5, [Medidas de Tempo (s)]), table.cell( rowspan: 2, [Tempo (s)]),
+        [1ª], [2ª], [3ª], [4ª], [5ª]
+      ),
+      [$s_1$], [0,1], [], [], [], [], [], [],
+      [$s_2$], [0,2], [], [], [], [], [], [],
+      [$s_3$], [0,3], [], [], [], [], [], [],
+      [$s_4$], [0,4], [], [], [], [], [], [],
+      [$s_5$], [0,5], [], [], [], [], [], [],
+      //table.cell(colspan: 2)[*Média*]
+    )
+  ]<tbl-dados>
+]
+
 ```

@@ -211,6 +211,7 @@
   )
   show table: set text(size: 10pt)
   show table.cell.where(y: 0): strong
+  
 
   // 📌 Banner superior no topo da primeira página (Flutuante cobrindo as colunas)
   place(
